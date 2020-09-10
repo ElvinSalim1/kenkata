@@ -748,8 +748,8 @@
         </div>
     </div>
 
-<div class="wow animated zoomIn grid-layout">
-    <div class="grid-item span-3 grid-item-2">
+<div class="wow animated zoomIn mylayout grid-layout">
+    <div class="grid-item mysp3 grid-item-2">
 
         <div class="item">
             <img class="wow animated zoomIn b11 hover1 img-fluid" src="../assets/picture40.png" alt="">
@@ -786,7 +786,7 @@
 
     </div>
 
-    <div class="span-2 grid-item-1 mobilyox">
+    <div class="mysp2 grid-item-1 mobilyox">
 
         <div class="item">
             <img class="wow animated zoomIn b11 hover1 img-fluid" src="../assets/picture41.png" alt="">
@@ -824,7 +824,7 @@
 
     </div>
 
-    <div class=" span-2 grid-item-3 mobilyox">
+    <div class=" mysp2 grid-item-3 mobilyox">
 
         <div class="item">
             <img class="wow animated zoomIn b11 hover1 img-fluid" src="../assets/picture42.png" alt="">
@@ -860,6 +860,70 @@
     </div>
 </div>
 </div>
+
+
+
+
+ <div class="backcolor my-5">
+        <div class="container">
+          
+          <div id="carouselExampleIndicators" class="carousel slide pb-5" data-interval="false" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center">
+                <div class="mb-5 text-center">
+                  <div>
+                    <img src="../assets/picture16.png" alt="" class="wow animated zoomIn mb-4">
+                  </div>
+                  <div>
+                    <img src="../assets/picture17.png" alt="" class="wow animated zoomIn mb-4">
+                  </div>
+                  <div>
+                    <img src="../assets/picture18.png" alt="" class="wow animated zoomIn mb-4">
+                  </div>
+                  <h2 class="wow animated zoomIn green-color mb-2 text-center">Johny Wesmullar</h2>
+                    <span class="mb-4 text-white">CEO, Biotech Inc.</span>
+                  <div class="wow animated zoomIn mt-3 d-flex justify-content-center">
+                    <span class="text-white w-50 d-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <div class="mb-5 text-center">
+                  <div>
+                    <img src="../assets/picture16.png" alt="" class="mb-4">
+                  </div>
+                  <div>
+                    <img src="../assets/picture17.png" alt="" class="mb-4">
+                  </div>
+                  <div>
+                    <img src="../assets/picture18.png" alt="" class="mb-4">
+                  </div>
+                  <h2 class="green-color mb-2 text-center">Johny Wesmullar</h2>
+                    <span class="mb-4 text-white">CEO, Biotech Inc.</span>
+                  <div class="d-flex mt-3 justify-content-center">
+                    <span class="text-white w-50 d-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
 
 
 
@@ -902,6 +966,9 @@ export default {
 </script>
 
 <style scoped>
+.backcolor{
+  background-color: #0E153D;
+}
 
 .whitetext{
   color: white;
@@ -953,11 +1020,11 @@ export default {
 }
 
 
-.span-2 {
+.mysp2 {
     grid-column-end: span 2;
     grid-row-end: span 2;
 }
-.span-3 {
+.mysp3 {
     grid-column-end: span 2;
     grid-row-end: span 4;
 }
@@ -976,7 +1043,7 @@ export default {
 }
 
 @media (min-width: 1220px) {
-    .grid-layout {
+    .mylayout {
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
         grid-gap: 10px;
         padding: 15px;
