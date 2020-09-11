@@ -84,14 +84,6 @@ i {
     width: 45px;
     background-color: var(--green);
 }
-
-@media (min-width: 576px) { 
-
-}
-
-@media (min-width: 768px) { 
-}
-
 @media (min-width: 992px) { 
     .mdm {
         margin-left: 1rem;
@@ -102,5 +94,5 @@ i {
         width: 85%;
     }
 }
-@media (min-width: 1200px) {}
+
 </style>
